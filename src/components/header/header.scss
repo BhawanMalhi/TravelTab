@@ -1,0 +1,21 @@
+@use '../../styles/partials/mixins' as *;
+
+.header {
+    background-color:#0D1B2A;
+    color:#E0E1DD;
+   
+    &__wrapper {
+     text-align: center;
+     padding:1.5rem;
+     font-weight: 200;
+    }
+
+    @include tablet {
+        &__wrapper {
+            font-size:1rem;
+        }
+
+    }
+
+    @include desktop {}
+}
