@@ -2,7 +2,7 @@
 
 .login
 {
-    background-image: url("../../assets/images/chris-lawton-duQ1ulzTJbM-unsplash.jpg");
+    background-image: url("../../assets/images/image1.jpg");
     height: 100%;
     display: flex;
     justify-content: center;
@@ -10,17 +10,17 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    height:74vh;
     filter: grayscale(50%);
     
     &__form
     {
+        margin:4rem;
         position: relative;
        background-color: #E0E1DD; 
        padding: 2rem;
        border-radius: 8px;
        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     z-index: 1; 
+       z-index: 1; 
         &--title
         {
             color:#0D1B2A;

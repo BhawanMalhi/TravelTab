@@ -1,6 +1,11 @@
 import React from 'react'
 import './login.scss';
+import { useNavigate } from "react-router-dom";
 export default function Login() {
+    const navigate = useNavigate();
+    const toHome = () => {
+        navigate("/home");
+      };
   return (
      <section className="login"> 
         <div className="login__form">
@@ -14,7 +19,7 @@ export default function Login() {
                     <label>Password:</label>
                     <input type="password" id="password" name="password" />
                 </div>
-                <button type="submit">Login</button>
+                <button   onClick={toHome} >Login</button>
             </form>
      
         </div>

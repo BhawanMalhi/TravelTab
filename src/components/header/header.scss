@@ -6,8 +6,9 @@
    
     &__wrapper {
      text-align: center;
-     padding:1.5rem;
-     font-weight: 200;
+     padding:1.2rem;
+    
+
     }
 
     @include tablet {
@@ -18,4 +19,14 @@
     }
 
     @include desktop {}
+}
+a{
+    text-decoration: none;
+    color:#E0E1DD;
+}
+a.active {
+    
+    text-decoration: none;
+    color:#E0E1DD;
+    
 }
