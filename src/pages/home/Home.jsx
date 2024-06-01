@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.scss";
 import img from "../../assets/images/image4.jpg";
-
+import { useNavigate } from "react-router-dom";
 let trips = [
   {
     id: 1,
@@ -18,10 +18,15 @@ let trips = [
 ];
 
 export default function Home() {
+  const navigate = useNavigate();
+    const toAddTrip = () => {
+        navigate("/addTrip");
+      };
+      
   return (
     <div className="home">
       <h1>My Trips</h1>
-      <button className="home__addBtn">Add Trip</button>
+      <button className="home__addBtn" onClick={toAddTrip}>Add Trip</button>
       <div className="home__cards">
       {trips.map((item, index) => (
         <div className="home__card" key={index}>

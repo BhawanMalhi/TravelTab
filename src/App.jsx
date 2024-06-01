@@ -4,6 +4,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Login from './pages/logIn/Login';
 import Home from './pages/home/Home';
+import AddTrip from './pages/addTrip/AddTrip';
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/addTrip" element={<AddTrip />} />
       </Routes>
       <Footer />
     </BrowserRouter>
