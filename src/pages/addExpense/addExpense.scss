@@ -1,5 +1,5 @@
-.trip {
-    background-image: url("../../assets/images/image2.jpg");
+.expense {
+    background-image: url("../../assets/images/image6.jpg");
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
     position: relative;
     filter: grayscale(50%);
 
-    &__title {
+    .expense__title{
         color: #0D1B2A;
         margin-bottom: 1rem;
 
@@ -24,7 +24,17 @@
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 1;
-
+        &--cancelBtn
+        {
+            position: absolute;
+            right:0.6rem;
+            top:0.4rem;
+            padding:0.6rem;
+            background-color: #E0E1DD;
+            border:none;
+            font-size: 1rem;
+            cursor: pointer;
+        }
         form {
             width: 30vw;
 
@@ -65,7 +75,7 @@
 
 }
 
-.trip::before {
+.expense::before {
     content: '';
     position: absolute;
     top: 0;

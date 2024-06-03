@@ -6,7 +6,8 @@ export default function Header() {
     <div className="header">
         <div className="header__wrapper">
           
-           <NavLink to="/"> <h2>TravelTab</h2></NavLink>
+           <NavLink to="/home"> <h2>TravelTab</h2></NavLink>
+           <NavLink to="/login"> <button>LOG OUT</button></NavLink>
 
         </div>
     </div>
