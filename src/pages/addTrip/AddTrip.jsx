@@ -6,7 +6,7 @@ export default function AddTrip() {
   const navigate = useNavigate();
   const addTrip = async (event) => {
     event.preventDefault();
-    console.log(import.meta.env.VITE_LOCALHOST + "/addTrip");
+   
 
     try {
       await axios.post(import.meta.env.VITE_LOCALHOST + "/travelTab/trips", {

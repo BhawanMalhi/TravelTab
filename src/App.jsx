@@ -18,7 +18,9 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/addTrip" element={<AddTrip />} />
           <Route path="/travelTab/trips/:tripId" element={<Expense />}  />
-          <Route path="/addExpense" element={<AddExpense />} />
+          {/* <Route path="/addExpense" element={<AddExpense />} /> */}
+         
+          <Route path="/travelTab/trips/:tripId/addExpense" element={<AddExpense />} />
         </Routes>
         <Footer />
       </BrowserRouter>

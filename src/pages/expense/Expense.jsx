@@ -49,7 +49,8 @@ export default function Expense() {
     <div className="trip" style={{ backgroundImage: `url(${trip.src})` }}>
       <div className="trip__wrapper">
         <h1>Trip to {trip.place}, {trip.country}</h1>
-        <button className="trip__wrapper--btn" onClick={toAddExpense}>Add Expense</button>
+        <Link to={`/travelTab/trips/${tripId}/addExpense`} className="trip__wrapper--btn">Add Expense</Link>
+       
         <button className="trip__wrapper--cancelBtn" onClick={toHome}><i className ="fa-regular fa-circle-xmark"></i></button>
         <h2>Expenses</h2>
         <table className="expenses-table">
@@ -63,7 +64,7 @@ export default function Expense() {
           <tbody>
             {trip.expenses.map(expense => (
               <tr key={expense.id}>
-                <td>{expense.name}</td>
+                <td>{expense.category}</td>
                 <td>{expense.discription}</td>
                 <td>{expense.amount}</td>
               </tr>
