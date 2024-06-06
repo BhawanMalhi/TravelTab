@@ -7,6 +7,7 @@ import Home from "./pages/home/Home";
 import AddTrip from "./pages/addTrip/AddTrip";
 import Expense from "./pages/expense/Expense";
 import AddExpense from "./pages/addExpense/addExpense";
+import Register from "./pages/register/Register";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/home" element={<Home />} />
           <Route path="/addTrip" element={<AddTrip />} />
           <Route path="/travelTab/trips/:tripId" element={<Expense />}  />
