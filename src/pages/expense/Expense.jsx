@@ -56,7 +56,7 @@ export default function Expense() {
         <table className="expenses-table">
           <thead>
             <tr>
-              <th>Name</th>
+              <th>Type</th>
               <th>Description</th>
               <th>Amount</th>
             </tr>
@@ -66,14 +66,14 @@ export default function Expense() {
               <tr key={expense.id}>
                 <td>{expense.category}</td>
                 <td>{expense.discription}</td>
-                <td>{expense.amount}</td>
+                <td><span>$</span>{expense.amount}</td>
               </tr>
             ))}
           </tbody>
           <tfoot>
             <tr>
               <td colSpan="2">Total</td>
-              <td>{totalAmount}</td>
+              <td><span>$</span>{totalAmount}</td>
             </tr>
           </tfoot>
         </table>

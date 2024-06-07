@@ -48,6 +48,12 @@ export default function Register() {
           </div>
           <button type="submit">Register</button>
         </form>
+        <p>
+          Back to{" "}
+          <a href="/login">
+            <span>LogIn</span>
+          </a>
+        </p>
       </div>
     </div>
   );
