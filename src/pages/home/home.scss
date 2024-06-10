@@ -1,0 +1,102 @@
+@use "../../styles/partials/mixins" as *;
+
+
+.home {
+    
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+   
+    position: relative;
+   
+
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+
+    h1 {
+        text-align: center;
+        color: #0D1B2A;
+        font-size: 1.7rem;
+        padding: 1rem;
+    }
+
+    &__addBtn {
+        position: absolute;
+        bottom: 1rem;
+        right: 46%;
+        background-color: #103357;
+        color: #E0E1DD;
+        padding: 0.5rem 1.5rem;
+        border-radius: 20px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #0D1B2A;
+        }
+
+    }
+
+    &__cards {
+        margin: 1rem 6rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: space-around;
+
+        .home__card {
+            background:white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 14rem;
+            margin-bottom: 16px;
+           
+            .deleteBtn {
+               background-color: white;
+                margin-left:90%;
+               border:none;
+               
+                
+                cursor: pointer;
+                
+                &:hover {
+                    background-color: #0D1B2A;
+                    
+                    color:white;
+                  }
+            }
+            
+
+            &--img {
+                width: 100%;
+                height: 140px;
+                object-fit: cover;
+            }
+
+            &--text {
+                padding: 5px;
+                text-align: center;
+
+                h2 {
+                    margin: 0 0 2px;
+                    font-size: 1rem;
+                    color: #0D1B2A;
+                }
+
+                p {
+
+                    color: #212D40;
+                    font-size: 0.8rem;
+
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px #415a77;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,76 @@
+.trip {
+    background-image: url("../../assets/images/image2.jpg");
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    filter: grayscale(50%);
+
+    &__title {
+        color: #0D1B2A;
+        margin-bottom: 1rem;
+
+    }
+
+    &__form {
+        margin: 4rem;
+        position: relative;
+        background-color: #E0E1DD;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+
+        form {
+            width: 30vw;
+
+            div {
+                margin-bottom: 1rem;
+
+                label {
+                    display: block;
+                    margin-bottom: 0.5rem;
+                    color: #103357
+                }
+
+                input {
+                    width: 100%;
+                    padding: 0.5rem;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+            }
+
+            button {
+                width: 100%;
+                padding: 0.75rem;
+                border: none;
+                border-radius: 4px;
+                background-color: #103357;
+                color: white;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #0D1B2A;
+            }
+
+        }
+    }
+
+}
+
+.trip::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
