@@ -2,7 +2,13 @@
 
 
 .home {
+    
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+   
     position: relative;
+   
 
     padding-top: 1rem;
     padding-bottom: 4rem;
@@ -38,7 +44,7 @@
         justify-content: space-around;
 
         .home__card {
-            background: #fff;
+            background:white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;

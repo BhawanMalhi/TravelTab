@@ -4,6 +4,9 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 export default function AddTrip() {
   const navigate = useNavigate();
+  const toHome = () => {
+    navigate("/home");
+  };
   const addTrip = async (event) => {
     event.preventDefault();
    
@@ -26,6 +29,8 @@ export default function AddTrip() {
     <section className="trip">
       <div className="trip__form">
         <h2 className="trip__title">ADD A NEW TRIP</h2>
+        <button className="trip__wrapper--cancelBtn" onClick={toHome}><i className ="fa-regular fa-circle-xmark"></i></button>
+
         <form onSubmit={(e) => addTrip(e)}>
           <div>
             <label>Place:</label>

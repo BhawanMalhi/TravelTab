@@ -8,15 +8,18 @@ import AddTrip from "./pages/addTrip/AddTrip";
 import Expense from "./pages/expense/Expense";
 import AddExpense from "./pages/addExpense/addExpense";
 import Register from "./pages/register/Register";
+
 function App() {
   return (
     <>
+   
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+         
           <Route path="/home" element={<Home />} />
           <Route path="/addTrip" element={<AddTrip />} />
           <Route path="/travelTab/trips/:tripId" element={<Expense />}  />
@@ -26,8 +29,11 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
+     
     </>
   );
 }
+
+
 
 export default App;

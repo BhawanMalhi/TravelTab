@@ -22,24 +22,7 @@ export default function AddExpense() {
     navigate("/home");
   };
  
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   const newExpense = {
-  //     id: Date.now().toString(),
-  //     category,
-  //     amount,
-  //     discription,
-  //   };
 
-  //   try {
-  //     await axios.post(`${import.meta.env.VITE_LOCALHOST}/travelTab/trips/${tripId}/addExpense`, newExpense);
-  //     alert("expense added");
-  //     navigate(`/travelTab/trips/${tripId}`);
-  //   } catch (error) {
-  //     console.error("Error adding expense:", error);
-  //   }
-  // };
-  
   
   const addExpense = async (event) => {
     event.preventDefault();

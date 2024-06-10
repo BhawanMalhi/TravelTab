@@ -34,15 +34,15 @@ export default function Register() {
       <div className="register__form">
         <h2 className="register__form--title">Register</h2>
         <form onSubmit={registerUser}>
-          <div className="input-group">
+          <div className="register__form--input">
             <label>Email</label>
             <input type="email" name="email" id="email"/>
           </div>
-          <div className="input-group">
+          <div className="register__form--input">
             <label>Name</label>
             <input type="text" name="name" id="name"/>
           </div>
-          <div className="input-group">
+          <div className="register__form--input">
             <label>Password</label>
             <input type="password" name="password" id="password" />
           </div>

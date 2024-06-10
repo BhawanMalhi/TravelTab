@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./login.scss";
 import { useNavigate } from "react-router-dom";
+
 export default function Login() {
   const navigate = useNavigate();
-
-  const handlelogin = async (e) => {
+  
+  const Tologin = async (e) => {
     e.preventDefault();
 
     try {
@@ -20,6 +21,7 @@ export default function Login() {
       if (response.data.success) {
         alert("Login successful!");
         navigate("/home");
+       
       } else {
         alert("Invalid email or password");
       }
@@ -37,13 +39,13 @@ export default function Login() {
     <section className="login">
       <div className="login__form">
         <h2 className="login__form--title">Login</h2>
-        <form onSubmit={handlelogin}>
-          <div className="input-group">
+        <form onSubmit={Tologin}>
+          <div className="login__form--input">
             <label>Email:</label>
 
             <input type="email" id="email" name="email" />
           </div>
-          <div className="input-group">
+          <div className="login__form--input">
             <label>Password:</label>
 
             <input type="password" id="password" name="password" />
